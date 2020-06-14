@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8";
+		meta name="viewport" content="width=device-width,
+		initial-scale=1">
+		<title> WEBFERNAND CREATIONS | Welcome </title>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ </head>
+ <body>
+	<header>
+		<div class="container">
+		<div id="branding">
+		<h1><span class="highlight">DIBS</span> Consultan</h1>
+		</div>
+		<nav>
+			<ul>
+			<li class="current"><a href="index.html" class="active"> Home </a></li>
+			<li><a href="gallery.html" class="active"> Gallery </a></li>
+			<li><a href="about.html" class="active"> About </a></li>
+		</ul>
+		</nav>
+		</div>
+	</header>
+	
+	<section id="showcase">
+	<div class="container">
+	<h1> Afforable Professional Consultan Industry</h1>
+	<p> DIBS Consultan merupakan salah salah satu cv yang bergerak di bidang konsultan pada proyek sipil seperti paada proyek semenisasi jalan, pembuatan drainase. </p>
+	</div>
+	</section>
+	
+	<section id="newsletter">
+	<div class="container">
+	<h1>Subcribe To Our Newsletter</h1>
+	<form  action="#" method="POST" onSubmit="email()">
+		<input type="email" id="email" placeholder="enter email..">
+		<button type="submit" id="test" value="kirim" class="button_1 mt-3"> subcribe</button>
+		</form> 
+	</div>
+	</section>
+	
+	<section id="boxes" class="boxes">
+		<div class="container">
+		<div class="row">
+		<div class="col-4 col-sm-3 col-md-3" >
+		<div class="services">
+		<div class="service text-align:center;">
+		<H2> Our Service </h2>
+		</div>
+			<div class="box">
+			<img src="./img/icon index/kontruksi.png">
+			<h3> Perencanaan Kontruksi </h3>
+		<div align="justify">
+			<p> DIBS Consultan mempunyai layana yakni perencanan kontruksi diamna membantu perusahaan kontraktor dlam merencanakan pembanguna baik dari segi biaya maupun operasional </p></div>
+		</div>
+		<div class="box">
+		<img src="./img/icon index/maintenance.jpg">
+		<h3> Perbaikan Kontruksi </h3>
+		<div align="justify">
+		<p> DIBS Consultan mempunyai layanan yakni pengawasan kontruksi dimana membantu perusahaan kontraktor dlam merencanakan pembanguna baik dari segi biaya maupun operasional </p></div>
+		</div>
+		<div class="box">
+		<img src="./img/icon index/pengawas.png">
+		<h3> Pengawasan Kontruksi </h3>
+		<div align="justify">
+		<p> DIBS Consultan mempunyai layana yakni perencanan kontruksi diamna membantu perusahaan kontraktor dlam merencanakan pembanguna baik dari segi biaya maupun operasional </p></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+	</section>
+
+	<section id="newsletters">
+	</section>
+	<section id="join">
+	<div align="center">
+	<h2>Join Us</h2>
+	</div>
+	<div class="container">
+	<div class="row">
+	<div class="col-6">
+	<div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" />
+			</div>
+			<div>
+				<label>Keperluan:</label>
+				<textarea cols="40" rows="5" name="Keperluan" id="keperluan"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Kirim" class="tombol">
+			</div>
+		</form>
+	</div>
+	</div>
+	</div>
+	</div>
+	</section>
+
+	<footer>
+		<p> DIBS Consultan, copyright &copy; 2019</p>
+	</footer>
+	<script type="text/javascript">
+		function email() {
+		var email = document.getElementById("email").value;
+		var test = document.getElementById("test").addEventListener("click", myFunction);
+		if ( email!="") {
+		function myFunction() {
+		alert ("Hello World!");
+		return true;
+		}
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+			}
+		}
+	</script>
+	
+	<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var email = document.getElementById("email").value;
+		var keperluan = document.getElementById("Keperluan").value;
+		if (nama != "" && email!="" && Keperluan !="") {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+			}
+		}
+	</script>
+	</body>
+</html>
